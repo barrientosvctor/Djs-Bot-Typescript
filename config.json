@@ -1,0 +1,9 @@
+{
+    "token": "their bot token here",
+    "prefix": "!",
+    "slash": {
+        "testing": false,
+        "serverTest": "their testing server ID here",
+        "botID": "their bot ID here"
+    }
+}
