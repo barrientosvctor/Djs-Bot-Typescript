@@ -7,7 +7,7 @@
     "start": "npx ts-node ."
   },
   "keywords": ["discord-bot", "typescript", "discordjs", "djs", "djs-bot", "discordjs-bot", "discordjs-v14", "djs-v14"],
-  "author": "ShawnTTS",
+  "author": "uShawnTS",
   "license": "ISC",
   "dependencies": {
     "discord.js": "^14.3.0"

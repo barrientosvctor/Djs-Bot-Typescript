@@ -8,7 +8,7 @@ export default new Event({
             const slash = client.slash.get(interaction.commandName);
             if (!slash) return;
 
-            async function runCommands() {
+            const runCommands = async () => {
                 await interaction.deferReply().catch(() => {});
 
                 try {
