@@ -1,9 +1,9 @@
 {
-    "token": "MTAzNjExMTc4NDgxNTM3MDI5MA.Gr4hf4.EtCIZZxjIhQQzRnXpeKQsjDkfYmLUIhRTVnXxA",
+    "token": "their bot token here",
     "prefix": "!",
     "slash": {
-        "testing": true,
-        "serverTest": "744764718543011902",
-        "botID": "1036111784815370290"
+        "testing": false,
+        "serverTest": "their personal server ID here",
+        "botID": "their bot ID here"
     }
 }
