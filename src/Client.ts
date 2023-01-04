@@ -14,10 +14,10 @@ export default class client extends discord.Client {
 
     public async start() {
         this.login(config.token);
-        CommandHandler(this);
-        EventHandler(this);
-        SlashCommandHandler(this);
-        ContextHandler(this);
+	CommandHandler(this);
+	EventHandler(this);
+	SlashCommandHandler(this);
+	ContextHandler(this);
     }
 
     public async loadSlash() {
