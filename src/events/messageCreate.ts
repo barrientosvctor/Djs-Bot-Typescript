@@ -8,7 +8,7 @@ export default new Event({
         try {
             let prefix = "!";
             const args = message.content.substring(prefix.length).split(" ");
-            const command: Command = client.commands.get(args[0]) || client.commands.get(client.aliases.get(args[0]));
+            const command: Command | undefined = client.commands.get(args[0]) || client.commands.get(client.aliases.get(args[0])!);
 
             if (!args[0] || message.author.bot || !message.guild || !message.content.startsWith(prefix)) return;
 

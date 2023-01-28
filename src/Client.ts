@@ -26,10 +26,10 @@ export default class client extends discord.Client {
             let slash_status: string;
             if (config.slash.testing) {
                 slash_status = "(guild)";
-                await this.guilds.cache.get(config.slash.serverTest).commands?.set(this.slash.map(cmd => cmd.data.toJSON()));
+                await this.guilds.cache.get(config.slash.serverTest)?.commands?.set(this.slash.map(cmd => cmd.data.toJSON())).catch(console.error);
             } else {
                 slash_status = "(public)";
-                this.application.commands?.set(this.slash.map(cmd => cmd.data.toJSON()));
+                this.application?.commands?.set(this.slash.map(cmd => cmd.data.toJSON())).catch(console.error);
             }
             console.log(`[SLASH] Slash commands and context menus uploaded! ${slash_status}`);
         }

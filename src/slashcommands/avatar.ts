@@ -8,10 +8,10 @@ export default {
     .addUserOption(opt => opt.setName("member").setDescription("Specific the member here.").setRequired(true)),
     run(client: client, interaction: discord.CommandInteraction) {
         try {
-            const member: discord.User = interaction.options.getUser("member");
+            const member: discord.User | null = interaction.options.getUser("member");
             const embed = new discord.EmbedBuilder()
-            .setTitle(`${member.username}'s Avatar`)
-            .setImage(member.displayAvatarURL({ size: 2048, extension: "png" }))
+            .setTitle(`${member?.username}'s Avatar`)
+            .setImage(member!.displayAvatarURL({ size: 2048, extension: "png" }))
             .setColor("Random")
             .setAuthor({ name: interaction.user.tag, iconURL: interaction.user.displayAvatarURL({ size: 2048, extension: "png" }) });
 
