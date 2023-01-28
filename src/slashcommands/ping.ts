@@ -6,6 +6,6 @@ export default {
     .setName("ping")
     .setDescription("It shows the bot latency."),
     run(client: client, interaction: discord.CommandInteraction) {
-        interaction.editReply(`Pong! 🏓 *${Date.now() - interaction.createdTimestamp}ms*`);
+        interaction.editReply(`Pong! 🏓 -- Message: *${Date.now() - interaction.createdTimestamp}ms* | WebSocket: *${client.ws.ping}ms*`);
     }
 }
