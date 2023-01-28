@@ -1,6 +1,6 @@
 {
   "name": "djs-bot-typescript",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A discord bot example with discord.js v14 package and written in TypeScript. This example includes context menus and prefix/slash commands.",
   "main": "index.ts",
   "scripts": {
